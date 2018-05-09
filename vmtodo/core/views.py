@@ -16,7 +16,7 @@ def get_post_tasks(request):
             form.save()
             return JsonResponse(data=form.data, status=201)
         else:
-            return JsonResponse(data={'messate': 'Invalid format'}, status=400)
+            return JsonResponse(data={'message': 'Invalid format'}, status=400)
 
 
 def get_delete_put_task_datail(request, pk):

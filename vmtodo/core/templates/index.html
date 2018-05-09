@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Simple ToDo List</title>
+</head>
+<body>
+    <h1>Welcome to our Simple To Do List</h1>
+        <ol>
+            {% for task in tasks %}
+                <li>{{ task }}</li>
+            {% endfor %}
+        </ol>
+</body>
+</html>

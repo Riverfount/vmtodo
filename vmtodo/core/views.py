@@ -19,7 +19,7 @@ def get_post_tasks(request):
             return JsonResponse(data={'message': 'Invalid format'}, status=400)
 
 
-def get_delete_put_task_datail(request, pk):
+def get_delete_put_task_detail(request, pk):
     if request.method == 'GET':
         try:
             obj = model_to_dict(Tasks.objects.get(pk=pk))
